@@ -454,7 +454,7 @@ document.onkeydown = function (event) {
         }
     }
 
-var message="Sorry, right-click has been disabled"; 
+var message=""; 
 
 function clickIE() {if (document.all) {(message);return false;}} 
 function clickNS(e) {if 
@@ -509,7 +509,7 @@ return true;
     }*/
     document.onkeydown = function(e) {
             if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
-                alert('Sorry\nNo CTRL+U is allowed. Be creative!');
+                alert('Sorry\nCTRL+U is not allowed. Be creative!');
             }
             return false;
     };
